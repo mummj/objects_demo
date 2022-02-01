@@ -25,14 +25,15 @@ function Icecream (flavor, dish, size){
   this.dish = dish;
   this.size = size;
 }
+
+Icecream.prototype.topping = "sprinkles"
+
 const jaidynsIcecream = new Icecream ('coffee', 'cone', 'small');
 
 const perlasIcecream = new Icecream ('carmel', 'cone', 'medium');
 
-Icecream.prototype.toppings = this.toppings;
-
-const tyisIcecream = new Icecream ('cookie dough', 'bowl', 'medium',);
+const tyisIcecream = new Icecream ('cookie dough', 'bowl', 'medium');
 
 console.log(jaidynsIcecream);
 console.log(perlasIcecream);
-console.log(tyisIcecream);
+console.log(tyisIcecream, Icecream.prototype);
